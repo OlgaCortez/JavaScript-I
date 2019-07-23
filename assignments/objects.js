@@ -20,31 +20,31 @@ const example = {
 // Write your intern objects here:
 const newInterns = [
 {
-  "id": 0,
+  "id": 1,
   "email": "mmelloy0@psu.edu", 
   "firstName": "Mitzi", 
   "gender": "F"
 },
   {
-    "id": 1,
+    "id": 2,
     "email": "kdiden1@tinypic.com",
     "firstName": "Kennan",
     "gender": "M"
   },
   {
-    "id": 2,
+    "id": 3,
     "email": "kmummery2@wikimedia.org",
     "firstName": "Keven",
     "gender": "M"
   }, 
   {
-    "id": 3,
+    "id": 4,
     "email": "gmartinson3@illinois.edu",
     "firstName": "Gannie",
     "gender": "M"
   },
   {
-    "id": 4,
+    "id": 5,
     "email": "adaine5@samsung.com",
     "firstName": "Antonietta",
     "gender": "F"
@@ -55,19 +55,19 @@ const newInterns = [
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log([0]['name']);
+console.log(newInterns[0].firstName);
 
 // Kennan's ID
-console.log([1]['id']);
+console.log(newInterns[1].id);
 
 // Keven's email
-console.log([2]['email']);
+console.log(newInterns[2].email);
 
 // Gannie's name
-console.log([3]['name']);
+console.log(newInterns[3].firstName);
 
 // Antonietta's Gender
-console.log([4]['gender']);
+console.log(newInterns[4].gender);
 
 
 
@@ -75,10 +75,12 @@ console.log([4]['gender']);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-console.log(newInterns.speak("Hello, my name is ", 'name'));
+//create a arrow function
+console.log(newInterns[2].speak("Hello, my name is ","firstName"));
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+console.log(newInterns[5].multiplyNums(2,5));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
